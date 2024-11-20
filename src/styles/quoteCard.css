@@ -1,0 +1,37 @@
+.quote-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  .quote {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .author {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .fetch-btn {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .fetch-btn:hover {
+    opacity: 0.9;
+  }
+  
