@@ -1,14 +1,99 @@
-body {
+/* Global Styles */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ff7eb3, #ff758c);
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Soft gradient background */
+  color: #333;
 }
 
-.app {
+/* Quote Card Styling */
+.quote-card {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
   text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Hover effect */
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.quote:before {
+  content: "“";
+  font-size: 2.5rem;
+  color: #f8a5c2; /* Quote mark color */
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.author {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #888;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+/* Button Styling */
+.fetch-btn {
+  padding: 10px 20px;
+  background: #4CAF50; /* New background color, e.g., green */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fetch-btn:hover {
+  background-color: #45a049; /* Darker green for hover effect */
+  transform: scale(1.05); /* Slightly grow the button when hovered */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .quote-card {
+    padding: 20px;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+
+  .fetch-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
